@@ -1,3 +1,4 @@
+using System;
 using Microsoft.EntityFrameworkCore;
 
 namespace API_Folhas.Models
@@ -11,5 +12,11 @@ namespace API_Folhas.Models
 
         public DbSet<Funcionario> Funcionarios { get; set; }
         public DbSet<FolhaPagamento> Folhas { get; set; }
+
+
+        internal void SaveChanges()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
